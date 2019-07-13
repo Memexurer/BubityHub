@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BubityHub"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="BubityHub" Height="500" Width="800"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="#FF0E111F"
+        FontFamily="{DynamicResource MaterialDesignFont}" Loaded="Window_Loaded">
     <Grid>
+
+        <MediaElement Visibility="Visible" Source="img/final.gif" MediaEnded="onMediaEnded" Name="mediaElement" LoadedBehavior="Manual" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <MediaElement.OpacityMask>
+                <SolidColorBrush x:Name="MyAnimatedBrush" Color="#FF0E111F" />
+            </MediaElement.OpacityMask>
         
+        </MediaElement>
+
     </Grid>
 </Window>

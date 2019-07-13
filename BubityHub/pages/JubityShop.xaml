@@ -1,0 +1,34 @@
+﻿<Page x:Class="BubityHub.pages.JubityShop"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      mc:Ignorable="d" 
+      Background="#FF0E111F"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="JubityShop">
+
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="100" Margin="95,-68,0,0" VerticalAlignment="Top" Width="100"/>
+        <Grid HorizontalAlignment="Left" Height="68" Margin="10,382,0,0" VerticalAlignment="Top" Width="780">
+            <Label HorizontalAlignment="Left" Margin="8,10,0,0" VerticalAlignment="Top" Content="Pobieranie aplikacji XYZ" Foreground="#DDFFFFFF" FontSize="18"/>
+
+           
+
+            <ProgressBar HorizontalAlignment="Left" Height="15" Margin="8,45,0,0" VerticalAlignment="Top" Width="760" RenderTransformOrigin="0.5,0.5" Value="50" Background="#FF22242C" BorderBrush="#FF22242C" BorderThickness="1" >
+                <ProgressBar.Foreground>
+                    <LinearGradientBrush EndPoint="0,0.5" MappingMode="RelativeToBoundingBox" StartPoint="1,0.5">
+                        <GradientStop Color="#FF00C6FF"/>
+                        <GradientStop Color="#FF0072FF" Offset="1"/>
+                    </LinearGradientBrush>
+                </ProgressBar.Foreground>
+                
+            </ProgressBar>
+ 
+
+        
+
+        </Grid>
+
+    </Grid>
+</Page>
